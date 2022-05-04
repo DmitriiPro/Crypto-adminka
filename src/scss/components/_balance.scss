@@ -1,0 +1,132 @@
+.balance {
+	max-width: 486px;
+
+	&__title {
+		font-weight: 600;
+		font-size: 27.5px;
+		line-height: 41px;
+		letter-spacing: 0.02em;
+		margin-bottom: 24px;
+	}
+
+	&__card {
+		width: 486px;
+		min-height: 244px;
+		background-color: #E5F2FE;
+		border-radius: 24px;
+		padding: 26px 28px 25px 35px;
+		position: relative;
+	}
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__dollar {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 42px;
+		letter-spacing: 0.02em;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.02em;
+	}
+
+	&__btn {
+		position: relative;
+		border: none;
+		background-color: transparent;
+		width: 20px;
+		height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.240s ease-in;
+
+		&:hover {
+			border-radius: 50%;
+			background-color: #c4d5e4;
+		}
+		&:active {
+			border-radius: 50%;
+			background-color: #7e95a883;
+		}
+
+		&-span {
+			display: block;
+			width: 4px;
+			height: 4px;
+			background-color: #A0A9B2;
+			border-radius: 50%;
+
+		}
+
+		&:before {
+			content: '';
+			width: 4px;
+			height: 4px;
+			background-color: #A0A9B2;
+			position: absolute;
+			top: -1px;
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: '';
+			width: 4px;
+			height: 4px;
+			background-color: #A0A9B2;
+			position: absolute;
+			bottom: -1px;
+			border-radius: 50%;
+
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 27px;
+	}
+
+	&__time {
+		position: absolute;
+		left: 34px;
+		bottom: 25px;
+		
+	}
+
+	&__time-btn {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.02em;
+		color: #ACBCCD;
+		border: none;
+		background-color: transparent;
+		margin-right: 24px;
+		transition: color 0.240s ease-in;
+
+		&:hover {
+			color: #5da3ee;
+		}
+		&:active {
+			color: #496d94;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&-active {
+			color: #040404;
+		}
+	}
+}

@@ -1,0 +1,146 @@
+.table {
+	flex-grow: 1;
+
+	&__wrapper-title {
+		display: flex;
+    	justify-content: space-between;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 38px;
+		letter-spacing: 0.02em;
+	}
+
+	&__hour {
+		padding: 10px 17px 10px 19px;
+		border: 1px solid #EFF2F4;
+		border-radius: 22px;
+		background-color: #FFFFFF;
+		margin-right: 13px;
+	}
+
+	&__hour, &__top {
+		transition: background-color 0.240s ease-in;
+
+		&:hover {
+			background-color: #cbcfd6;
+		}
+	}
+
+	&__top {
+		padding: 10px 16px 10px 18px;
+		border: 1px solid #EFF2F4;
+		border-radius: 22px;
+		background-color: #FFFFFF;
+	}
+
+	&__span-btn {
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+	}
+
+	// таблица
+
+	&__table {
+		width: 100%;
+
+		td:not(:last-child) {
+			padding-right: 15px;
+		}
+	}
+
+	&__tbody tr td{ 
+		padding: 10px 0;
+	}
+
+	&__tr-header th {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+		color: #8290A0;
+		padding: 29px 0 10px 0;
+		text-align: start;
+
+	}
+
+	&__block-td {
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+		margin-right: 16px;
+		background: linear-gradient(0deg, #222222, #222222), linear-gradient(0deg, #222222, #222222), linear-gradient(0deg, #222222, #222222), #222222;
+		border-radius: 15px;
+
+		&-band {
+			padding: 9px 8px 9px 10px;
+		}
+
+		&-vechain {
+			padding: 12px 11px 12px 12px;
+		}
+
+		&-aave {
+			padding: 16px 16px 16px 17px;
+		}
+
+		&-waves {
+			padding: 15px 15px 14px 14px;
+		}
+	}
+
+	
+	&-td-title {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		margin-bottom: 3px;
+	}
+
+	&-td-text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.02em;
+		color: #7A899A;
+	}
+
+	&__td-btn {
+		border: none;
+		background-color: transparent;
+		padding: 0 10px;
+	}
+
+	&__td-img {
+		display: block;
+	}
+
+	&__td-price {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+	}
+
+	.table__td-chanee {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: #4BA582;
+	}
+
+	.table__td-cap {
+		font-weight: 500;
+		font-size: 17px;
+		line-height: 26px;
+		letter-spacing: 0.02em;
+	}
+
+}

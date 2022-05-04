@@ -1,0 +1,95 @@
+.earn {
+	margin-left: 48px;
+	position: relative;
+	z-index: 10;
+	align-self: start;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 345px;
+		height: 48px;
+		background-color: #DFDFE3;
+		border-radius: 24px;
+		bottom: -16px;
+		z-index: -1;
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 295px;
+		height: 48px;
+		background-color: #F0F0F1;
+		border-radius: 24px;
+
+		bottom: -28px;
+		z-index: -2;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	&__wrapper {
+		width: 410px;
+		height: 363px;
+		background-color: #222222;
+		border-radius: 30px;
+		padding: 42px 41px 67px 35px;
+
+		background-image: url('../img/earn/free-line.svg');
+		background-repeat: no-repeat;
+		background-size: initial;
+		background-position: bottom right;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 45px;
+		letter-spacing: 0.02em;
+		color: #FFFFFF;
+
+		&-small {
+			font-weight: 600;
+			margin-bottom: 11px;
+		}
+	}
+
+	&__span {
+		display: inline-block;
+		width: 98px;
+		height: 75px;
+		background-image: url('../img/earn/free.svg');
+		vertical-align: middle;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: #FFFFFF;
+		margin-bottom: 35px;
+	}
+
+	&__btn {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		padding: 10px 40px 12px 34px;
+		background-color: #BCDFFF;
+		border-radius: 23px;
+		border: none;
+		transition: background-color 0.240s ease;
+
+		&:hover {
+			background-color: #89b3da;
+		}
+		&:active {
+			background-color: #5a80a3;
+		}
+	}
+}

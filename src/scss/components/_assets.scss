@@ -1,0 +1,148 @@
+.assets {
+
+	&__block-title {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 24px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 25.5px;
+		line-height: 38px;
+		letter-spacing: 0.02em;
+	}
+
+	&__btn {
+		border: none;
+		background-color: transparent;
+		width: 23px;
+		height: 15px;
+	}
+
+	&__btn-img {
+		display: block;
+	}
+
+	//карточки
+	&__block-card {
+		display: flex;
+		gap: 26px;
+	}
+
+	&__card {
+		width: 194px;
+		min-height: 244px;
+		background-color: #E5DEF0;
+		border-radius: 24px;
+		padding: 30px 24px 26px 24px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&_ltc {
+			background-color:#D6EDDA;
+		}
+
+		&_eth {
+			background-color:  #F6F0D8;
+		}
+	}
+
+	&__info {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		letter-spacing: 0.02em;
+		margin-bottom: 5px;
+	}
+
+	&__price {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.02em;
+	}
+
+	&__position {
+		position: absolute;
+		top: 37px;
+		right: 24px;
+	}
+
+	&__button {
+		width: 20px;
+		height: 20px;
+		
+		background-color: transparent;
+		border: none;
+		transition: all 0.24s ease-in;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:hover {
+			border-radius: 50%;
+			background-color: #adc3d769;
+		}
+
+		&:active {
+			border-radius: 50%;
+			background-color: #7e95a883;
+		}
+
+		&:before {
+			content: '';
+			width: 4px;
+			height: 4px;
+			background-color: #A09BA8;
+			border-radius: 50%; 
+			position: absolute;
+			top: 0;
+		}
+
+		&:after {
+			content: '';
+			width: 4px;
+			height: 4px;
+			background-color: #A09BA8;
+			border-radius: 50%; 
+			position: absolute;
+			bottom: 0;
+		}
+
+		&-span {
+			display: block;
+			width: 4px;
+			height: 4px;
+			background-color: #A09BA8;
+			border-radius: 50%; 
+
+		}
+	}
+	
+
+	&__icon {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-img {
+			padding: 11px 14px 12px;
+			background-color: #fff;
+			border-radius: 14px;
+		}
+
+		&-procent {
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 22px;
+			letter-spacing: 0.02em;
+			color: #896AB9;
+		}
+	}
+
+
+}
